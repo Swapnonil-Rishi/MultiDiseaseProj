@@ -1,0 +1,1 @@
+web: sh setup.sh && streamlit run multi_disease_pred.py
