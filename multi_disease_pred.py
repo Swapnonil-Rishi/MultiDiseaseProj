@@ -4,9 +4,9 @@ import pickle
 import streamlit as st
 
 
-heart_model=pickle.load(open('C:/Users/swapn/OneDrive/Desktop/FINAL PROJ/fin_mod_heart.sav','rb'))
-diabe_model=pickle.load(open('C:/Users/swapn/OneDrive/Desktop/FINAL PROJ/fin_mod_diabetes.sav','rb'))
-parkins_model=pickle.load(open('C:/Users/swapn/OneDrive/Desktop/FINAL PROJ/parkinsons_model.sav','rb'))
+heart_model=pickle.load(open('fin_mod_heart.sav','rb'))
+diabe_model=pickle.load(open('fin_mod_diabetes.sav','rb'))
+parkins_model=pickle.load(open('parkinsons_model.sav','rb'))
 
 
 st.set_page_config(
