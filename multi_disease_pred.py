@@ -1,6 +1,6 @@
 
-from fpdf import FPDF
-import pickle
+# from fpdf import FPDF
+# import pickle
 import streamlit as st
 
 
