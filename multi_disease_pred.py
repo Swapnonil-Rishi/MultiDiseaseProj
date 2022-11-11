@@ -1,3 +1,6 @@
+from fpdf import FPDF
+import pickle
+import streamlit as st
 
 st.set_page_config(
     page_title="Disease Predictor",
@@ -5,9 +8,6 @@ st.set_page_config(
     layout="wide",
    
 )
-from fpdf import FPDF
-import pickle
-import streamlit as st
 
 
 heart_model=pickle.load(open('fin_mod_heart.sav','rb'))
