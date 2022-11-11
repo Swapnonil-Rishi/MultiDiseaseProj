@@ -8,7 +8,7 @@ heart_model=pickle.load(open('fin_mod_heart.sav','rb'))
 diabe_model=pickle.load(open('fin_mod_diabetes.sav','rb'))
 parkins_model=pickle.load(open('parkinsons_model.sav','rb'))
 
-st.title('Multiple Disease Prediction System')
+st.title('Multiple Disease Prediction Syste')
 st.set_page_config(
     page_title="Disease Predictor",
     page_icon="chart_with_upwards_trend",
