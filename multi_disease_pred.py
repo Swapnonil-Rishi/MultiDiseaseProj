@@ -3,7 +3,7 @@ import pickle
 import streamlit as st
 
 st.set_page_config(
-    page_title="Disease Predictor",
+    page_title="AmIWell?",
     page_icon="chart_with_upwards_trend",
     layout="wide",
    
