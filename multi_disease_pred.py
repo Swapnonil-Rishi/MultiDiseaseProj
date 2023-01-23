@@ -372,7 +372,7 @@ with tab2:
       
    
 with tab3:
-   st.header("Perkinson's Prediction System")
+   st.header("Parkinson's Prediction System")
    
    col1, col2, col3 = st.columns(3)
    
@@ -447,29 +447,29 @@ with tab3:
    
    
    
-   perkinson_diagnosis = ''
+   parkinson_diagnosis = ''
    
    column1 ,column2=st.columns(2)
    with column1:
-       if st.button("Perkinson's Prediction Result"):
-           perkinson_prediction = parkins_model.predict([[Fo, MDVPFhi, MDVPFlo, MDVPJitterpercent, MDVPJitterAbs, MDVPRAP, MDVPPPQ, JitterDDP,MDVPShimmer,MDVPShimmerdB,ShimmerAPQ3,ShimmerAPQ5,MDVPAPQ,NShimmerDDA,NHR,HNR,RPDE,DFA,spread1,spread2,D2,PPE]])
+       if st.button("Parkinson's Prediction Result"):
+           parkinson_prediction = parkins_model.predict([[Fo, MDVPFhi, MDVPFlo, MDVPJitterpercent, MDVPJitterAbs, MDVPRAP, MDVPPPQ, JitterDDP,MDVPShimmer,MDVPShimmerdB,ShimmerAPQ3,ShimmerAPQ5,MDVPAPQ,NShimmerDDA,NHR,HNR,RPDE,DFA,spread1,spread2,D2,PPE]])
        
            
-           perkinson_diagnosis = 'Positive' if (perkinson_prediction[0] == 1) else 'Negative'
+           parkinson_diagnosis = 'Positive' if (parkinson_prediction[0] == 1) else 'Negative'
       
-       st.info(perkinson_diagnosis)
+       st.info(parkinson_diagnosis)
    with column2:
       
       
       
-#PDF REPORT PERKINSON'S
+#PDF REPORT PARKINSON'S
       pdf = FPDF('P', 'mm', 'A4')
      
      
       pdf.add_page()
       
       pdf.set_font('Arial', 'B', 24)
-      pdf.cell(190, 10, txt = "Perkinson's Report",ln = 1, align = 'C')
+      pdf.cell(190, 10, txt = "Parkinson's Report",ln = 1, align = 'C')
       pdf.line(x1 = 10, y1 = 27.5, x2 = 200, y2 = 27.5)
     
      
@@ -649,7 +649,7 @@ with tab3:
       pdf.cell(20, 30, txt = "Status : ",
              ln = 0, align = 'L')
       pdf.set_font('Arial')
-      pdf.cell(10, 30, txt = str(perkinson_diagnosis),
+      pdf.cell(10, 30, txt = str(parkinson_diagnosis),
              ln = 1, align = 'L')
     
       pdf.output("Pp.pdf") 
@@ -661,7 +661,7 @@ with tab3:
 
       st.download_button(label="Download Report", 
         data=PDFbyte,
-        file_name="Perkinson's_report.pdf",
+        file_name="Parkinson's_report.pdf",
         mime='application/octet-stream')                       
 
 
