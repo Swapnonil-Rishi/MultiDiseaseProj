@@ -17,7 +17,7 @@ parkins_model=pickle.load(open('parkinsons_model.sav','rb'))
 st.title('Multiple Disease Prediction System')
 
     
-tab1, tab2, tab3 = st.tabs(["Heart Disease Report", "Diabates Report", "Perkinsons Report"],
+tab1, tab2, tab3 = st.tabs(["Heart Disease Report", "Diabates Report", "Parkinsons Report"],
                          )
 
 
