@@ -380,7 +380,7 @@ with tab3:
        Nm = st.text_input('Name',key="N")
    
    with col2:
-        Age = int(st.text_input('Age',value=0))
+        Age = int(st.text_input('Ag',value=0))
    with col3:
        Fo = st.number_input('MDVP:Fo(Hz)',format="%.5f")
    
