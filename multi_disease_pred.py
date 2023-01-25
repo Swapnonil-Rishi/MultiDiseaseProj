@@ -380,45 +380,45 @@ with tab3:
        Nm = st.text_input('Name',key="N")
    
    with col2:
-        Age = int(st.text_input('Ag',value=0))
+        Age = int(st.text_input('Age',value=0))
    with col3:
-       Fo = st.number_input('MDVP:Fo(Hz)',format="%.5f")
+       Fo = st.number_input('MDVP Fo(Hz)',format="%.5f")
    
    with col1:
-       MDVPFhi = st.number_input('MDVP:Fhi(Hz)',key="l1",format="%.5f")
+       MDVPFhi = st.number_input('MDVP Fhi(Hz)',key="l1",format="%.5f")
    
    with col2:
-       MDVPFlo = st.number_input('MDVP:Flo(Hz)',key="l2",format="%.5f")
+       MDVPFlo = st.number_input('MDVP Flo(Hz)',key="l2",format="%.5f")
    
    with col3:
-       MDVPJitterpercent= st.number_input('MDVP:Jitter(%)',key="l3",format="%.5f")
+       MDVPJitterpercent= st.number_input('MDVP Jitter(%)',key="l3",format="%.5f")
    
    with col1:
-       MDVPJitterAbs = st.number_input('MDVP:Jitter(Abs)',key="l4",format="%.5f")
+       MDVPJitterAbs = st.number_input('MDVP Jitter(Abs)',key="l4",format="%.5f")
    
    with col2:
-       MDVPRAP= st.number_input('MDVP:RAP',key="l5",format="%.5f")
+       MDVPRAP= st.number_input('MDVP RAP',key="l5",format="%.5f")
    
    with col3:
-       MDVPPPQ = st.number_input('MDVP:PPQ',key="l6",format="%.5f")
+       MDVPPPQ = st.number_input('MDVP PPQ',key="l6",format="%.5f")
    with col1:
-       JitterDDP = st.number_input('Jitter:DDP',key="l7",format="%.5f")
+       JitterDDP = st.number_input('Jitter DDP',key="l7",format="%.5f")
    
    with col2:
-       MDVPShimmer= st.number_input('MDVP:Shimmer',key="l8",format="%.5f")
+       MDVPShimmer= st.number_input('MDVP Shimmer',key="l8",format="%.5f")
    
    with col3:
-       MDVPShimmerdB = st.number_input('MDVP:Shimmer(dB)',key="l9",format="%.5f")
+       MDVPShimmerdB = st.number_input('MDVP Shimmer(dB)',key="l9",format="%.5f")
    with col1:
-       ShimmerAPQ3 = st.number_input('Shimmer:APQ3',key="l10",format="%.5f")
+       ShimmerAPQ3 = st.number_input('Shimmer APQ3',key="l10",format="%.5f")
    
    with col2:
-       ShimmerAPQ5= st.number_input('Shimmer:APQ5',key="l11",format="%.5f")
+       ShimmerAPQ5= st.number_input('Shimmer APQ5',key="l11",format="%.5f")
    
    with col3:
-       MDVPAPQ = st.number_input('MDVP:APQ',key="l12",format="%.5f")
+       MDVPAPQ = st.number_input('MDVP APQ',key="l12",format="%.5f")
    with col1:
-       NShimmerDDA = st.number_input('Shimmer:DDA',key="l13",format="%.5f")
+       NShimmerDDA = st.number_input('Shimmer DDA',key="l13",format="%.5f")
    
    with col2:
        NHR= st.number_input('NHR',key="l14",format="%.5f")
